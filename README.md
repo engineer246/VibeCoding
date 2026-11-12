@@ -30,6 +30,33 @@ The directories above are the current top-level structure. Add resources to the 
 
 Resources are intended to be portable starting points. Integrate them using the conventions of your chosen AI tool; no particular editor or runtime is required by this repository.
 
+## Resource catalog
+
+### Prompts
+
+| Resource | Use it to |
+| --- | --- |
+| [Code Review](Prompts/code-review.md) | Review supplied code for actionable issues. |
+| [Debug an Error](Prompts/debug-error.md) | Diagnose an error and plan a focused fix. |
+| [Generate a Prompt, Skill, or Agent](Prompts/generate-prompt.md) | Draft a repository-aligned reusable resource. |
+| [Plan a Feature](Prompts/plan-feature.md) | Turn a feature idea into an implementation plan. |
+| [Prepare Release Notes](Prompts/prepare-release.md) | Summarize verified changes and release checks. |
+| [Generate a README](Prompts/readme-generator.md) | Create or improve a README using verified project details. |
+| [Refactor Code](Prompts/refactor-code.md) | Improve code structure while preserving behavior. |
+| [Write Documentation](Prompts/write-documentation.md) | Create or update clear, project-aligned docs. |
+| [Write Unit Tests](Prompts/write-unit-tests.md) | Generate focused tests for supplied code. |
+
+### Skills and agents
+
+| Resource | Use it to |
+| --- | --- |
+| [Feature Planning Skill](Skills/feature-planning.md) | Follow a repeatable workflow for scoping and planning a feature. |
+| [Documentation Maintainer Agent](Agents/documentation-maintainer.md) | Create or maintain project documentation accurately. |
+
+### Templates
+
+Start a new resource from the [prompt template](Templates/prompt-template.md), [skill template](Templates/skill-template.md), or [agent template](Templates/agent-template.md).
+
 ## Naming and contribution conventions
 
 Keep contributions focused, self-explanatory, and easy to discover:
@@ -50,6 +77,18 @@ Keep contributions focused, self-explanatory, and easy to discover:
 - Avoid duplicating an existing resource; extend or clarify it when that better serves the use case.
 - Keep examples generic and safe to share. Do not include credentials, private data, or project-specific secrets.
 - When adding a resource, check its formatting and links, and verify that its instructions are understandable without relying on undocumented context.
+
+### Resource quality checklist
+
+Before sharing a resource, confirm that:
+
+- Its name and location match its purpose, and it is not duplicating an existing resource.
+- Any required metadata is valid and concise.
+- Every user-editable value is an obvious, descriptive placeholder.
+- Instructions state the expected inputs and output, and do not invent repository conventions.
+- Examples are generic, safe to share, and consistent with the instructions.
+- Markdown headings, code fences, and relative links are correct.
+- Any claims about tools, workflows, or repository behavior are supported by the resource or its stated context.
 
 ## Contributing
 
